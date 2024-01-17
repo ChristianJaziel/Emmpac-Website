@@ -45,8 +45,8 @@
                   <div class="col-md-12 col-sm-3 col logo_section">
                      <div class="full">
                         <div class="center-desk">
-                           <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                           <div class="titlepage">
+                              <a href="index.html"><!--<img src="images/logo.png" alt="#" /> --> <h1 style="font-size: 40px;font-weight: bold;">emm<span class="green">pac</span></h1></a>
                            </div>
                         </div>
                      </div>
@@ -58,23 +58,28 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item ">
-                                 <a class="nav-link" href="index.html">Home</a>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="index.html">Inicio</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="about.html">About</a>
+                                 <a class="nav-link" href="#">Nosotros</a>
+                              </li>
+                              <div class="dropdown">
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+                                 </li>
+                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="containers.html">Contenedores</a>
+                                    <a class="dropdown-item" href="racks.html">Racks</a>
+                                    <a class="dropdown-item" href="materials.html">Materiales</a>
+                                  </div>
+                              </div>
+                              
+                              <li class="nav-item">
+                                 <a class="nav-link active" href="gallery.html">Galería</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="service.html">Services</a>
-                              </li>
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="gallery.html">Gallery</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="testimonial.html"> Testimonial </a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                                 <a class="nav-link" href="contact.html">Contacto</a>
                               </li>
                            </ul>
                         </div>
@@ -180,58 +185,36 @@
                         <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                      </ul>
-                     <p class="variat pad_roght2">There are many variat
-                        ions of passages of L
-                        orem Ipsum available
-                        , but the majority h
-                        ave suffered altera
-                        tion in some form, by 
-                     </p>
+                     
                   </div>
                   <div class=" col-md-3 col-sm-6">
-                     <h3>LET US HELP YOU </h3>
-                     <p  class="variat pad_roght2">There are many variat
-                        ions of passages of L
-                        orem Ipsum available
-                        , but the majority h
-                        ave suffered altera
-                        tion in some form, by 
-                     </p>
+                     <h3>Permítenos ayudarte</h3>
+                     <p  class="variat pad_roght2">
+                        En cada construcción y embalaje, encontramos oportunidades para ser más sostenibles. Permitenos ser tu aliado en este cambio hacia un futuro más verde.</p>
                   </div>
                   <div class="col-md-3 col-sm-6">
-                     <h3>INFORMATION</h3>
+                     <h3>Información</h3>
                      <ul class="link_menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html"> About</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="testimonial.html">Testimonial</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Galería</a></li>
+                        <li><a href="contact.html">Contáctanos</a></li>
                      </ul>
                   </div>
                   <div class="col-md-3 col-sm-6">
-                     <h3>OUR Design</h3>
-                     <p  class="variat">There are many variat
-                        ions of passages of L
-                        orem Ipsum available
-                        , but the majority h
-                        ave suffered altera
-                        tion in some form, by 
+                     <h3>Nuestro diseño</h3>
+                     <p  class="variat">Sumérgete en la belleza funcional de 'Nuestro Diseño'. Cada contenedor reutilizable y cada pieza de materia prima eco-amigable reflejan nuestra dedicación a la sostenibilidad con estilo.
                      </p>
                   </div>
-                  <div class="col-md-6 offset-md-6">
-                     <form id="hkh" class="bottom_form">
-                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
-                        <button class="sub_btn">subscribe</button>
-                     </form>
-                  </div>
+                  
                </div>
             </div>
             <div class="copyright">
                <div class="container">
                   <div class="row">
                      <div class="col-md-10 offset-md-1">
-                        <p>© 2019 All Rights Reserved. Design by <a href="https://html.design/"> Free Html Templates</a></p>
+                        <p>© 2024 All Rights Reserved. Design by emmpac</a></p>
                      </div>
                   </div>
                </div>
@@ -246,5 +229,16 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
+      <script>
+         // Configurar el dropdown para activarse al pasar el mouse
+         $('.dropdown').hover(
+           function () {
+             $(this).find('.dropdown-menu').show();
+           },
+           function () {
+             $(this).find('.dropdown-menu').hide();
+           }
+         );
+       </script>
    </body>
 </html>
