@@ -639,7 +639,13 @@ button {
 }
 
 #design .carousel-control-prev,
-#design .carousel-control-next {
+#design .carousel-control-next,
+#design1 .carousel-control-prev,
+#design1 .carousel-control-next,
+#design2 .carousel-control-prev,
+#design2 .carousel-control-next,
+#design3 .carousel-control-prev,
+#design3 .carousel-control-next {
      width: 83px;
      height: 76px;
      background: #0d0c0c;
@@ -651,18 +657,28 @@ button {
 
 #design .carousel-control-prev:hover,
 #design .carousel-control-next:hover,
-#design .carousel-control-prev:focus,
-#design .carousel-control-next:focus {
+#design1 .carousel-control-prev:hover,
+#design1 .carousel-control-next:hover,
+#design2 .carousel-control-prev:hover,
+#design2 .carousel-control-next:hover,
+#design3 .carousel-control-prev:hover,
+#design3 .carousel-control-next:hover {
      background: #16d316;
      color: #000;
 }
 
-#design a.carousel-control-prev {
+#design a.carousel-control-prev,
+#design1 a.carousel-control-prev,
+#design2 a.carousel-control-prev,
+#design3 a.carousel-control-prev {
      position: absolute;
      left: 31%;
 }
 
-#design a.carousel-control-next {
+#design a.carousel-control-next,
+#design1 a.carousel-control-next,
+#design2 a.carousel-control-next,
+#design3 a.carousel-control-next {
      position: absolute;
      right: 29%;
 }
