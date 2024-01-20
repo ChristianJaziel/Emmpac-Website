@@ -143,7 +143,7 @@
                               <li class="color-item" style="background-color: #e0b7e2;"></li>
                               <li class="color-item" style="background-color: #6fe87c;"></li>
                               <!-- Agrega más elementos de lista según sea necesario -->
-                          </ul>
+                           </ul>
                         </div>
                      </div>
                      <div class="col-md-6">
@@ -193,14 +193,16 @@
                   <!-- Agrega más items según sea necesario -->
 
                </div>
-               <a class="carousel-control-prev" href="#design" role="button" data-slide="prev">
-                  <i class="fa fa-angle-left" aria-hidden="true"></i>
-                  <span class="sr-only">Previous</span>
-               </a>
-               <a class="carousel-control-next" href="#design" role="button" data-slide="next">
-                  <i class="fa fa-angle-right" aria-hidden="true"></i>
-                  <span class="sr-only">Next</span>
-               </a>
+               <div class="container">
+                  <a class="carousel-control-prev" href="#design" role="button" data-slide="prev">
+                     <i class="fa fa-angle-left" aria-hidden="true"></i>
+                     <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#design" role="button" data-slide="next">
+                     <i class="fa fa-angle-right" aria-hidden="true"></i>
+                     <span class="sr-only">Next</span>
+                  </a>
+               </div>
             </div>
          </div>
       </div>
@@ -354,9 +356,11 @@
 
       .carousel-control-prev,
       .carousel-control-next {
-         margin-top: -50px;
+         margin-top: 0px;
          /* Ajusta el margen superior según sea necesario */
       }
+
+      
 
       @media (max-width: 767.98px) {
 
@@ -372,17 +376,21 @@
          list-style: none;
          padding: 0;
          margin: 0;
-         text-align: center; /* Centra los elementos de la lista */
-     }
+         text-align: center;
+         /* Centra los elementos de la lista */
+      }
 
-     .color-item {
+      .color-item {
          display: inline-block;
-         width: 30px; /* Ajusta el tamaño de los círculos según sea necesario */
+         width: 30px;
+         /* Ajusta el tamaño de los círculos según sea necesario */
          height: 30px;
          border-radius: 50%;
-         margin-right: 10px; /* Ajusta el espacio entre los círculos según sea necesario */
-         border: 3px solid #1d1d1d82; /* Borde ligero */
-     }
+         margin-right: 10px;
+         /* Ajusta el espacio entre los círculos según sea necesario */
+         border: 3px solid #1d1d1d82;
+         /* Borde ligero */
+      }
    </style>
 </body>
 
