@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>limelight</title>
+      <title>emmpac</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -231,13 +231,19 @@
       <script src="js/custom.js"></script>
       <script>
          // Configurar el dropdown para activarse al pasar el mouse
+         var timeoutId;
+
          $('.dropdown').hover(
-           function () {
-             $(this).find('.dropdown-menu').show();
-           },
-           function () {
-             $(this).find('.dropdown-menu').hide();
-           }
+             function () {
+                 clearTimeout(timeoutId); // Limpiar cualquier temporizador pendiente
+                 $(this).find('.dropdown-menu').show();
+             },
+             function () {
+                 var $dropdownMenu = $(this).find('.dropdown-menu');
+                 timeoutId = setTimeout(function () {
+                     $dropdownMenu.hide();
+                 }, 300);
+             }
          );
        </script>
    </body>

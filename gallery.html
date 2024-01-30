@@ -8,8 +8,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>limelight</title>
-      <meta name="keywords" content="">
+      <title>emmpac</title>
+      <meta name="keywords" content="emmpac Emmpac embalaje retornable">
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
@@ -62,16 +62,16 @@
                                  <a class="nav-link" href="index.html">Inicio</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="#">Nosotros</a>
+                                 <a class="nav-link" href="about.html">Nosotros</a>
                               </li>
                               <div class="dropdown">
                                  <li class="nav-item">
                                     <a class="nav-link" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
                                  </li>
                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="containers.html">Contenedores</a>
-                                    <a class="dropdown-item" href="racks.html">Racks</a>
-                                    <a class="dropdown-item" href="materials.html">Materiales</a>
+                                    <a class="dropdown-item dropdown-nav" href="containers.html">Contenedores</a>
+                                    <a class="dropdown-item dropdown-nav" href="racks.html">Racks</a>
+                                    <a class="dropdown-item dropdown-nav" href="materials.html">Materiales</a>
                                   </div>
                               </div>
                               
@@ -175,6 +175,50 @@
       -->
       <!-- end gallery -->
       <!--  footer -->
+      <div id="gallery"  class="gallery" style="background-color: #fff; border-radius:10%; ">
+         <div class="container" >
+            <div class="row">
+               <div class="col-md-12" style="background-color: #fff; border-radius: 20px; padding:1em">
+                  
+               </div>
+            </div>
+            <div class="row" style="padding-top: 1em;">
+               
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="images/cont/cont-plastic (13).png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="images/cells/celdado (13).png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="images/racks/racks (3).png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img height="200px" src="images/racks/racks (4).png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="images/materials/Epe (1).png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="images/materials/epe-foam (5).png" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
       <footer>
          <div class="footer">
             <div class="container">
@@ -232,13 +276,19 @@
       <script src="js/custom.js"></script>
       <script>
          // Configurar el dropdown para activarse al pasar el mouse
+         var timeoutId;
+
          $('.dropdown').hover(
-           function () {
-             $(this).find('.dropdown-menu').show();
-           },
-           function () {
-             $(this).find('.dropdown-menu').hide();
-           }
+             function () {
+                 clearTimeout(timeoutId); // Limpiar cualquier temporizador pendiente
+                 $(this).find('.dropdown-menu').show();
+             },
+             function () {
+                 var $dropdownMenu = $(this).find('.dropdown-menu');
+                 timeoutId = setTimeout(function () {
+                     $dropdownMenu.hide();
+                 }, 300);
+             }
          );
        </script>
    </body>

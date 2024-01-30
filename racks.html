@@ -9,7 +9,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>limelight</title>
+   <title>emmpac</title>
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
@@ -68,11 +68,11 @@
 
                      <div class="collapse navbar-collapse" id="navbarsExample04">
                         <ul class="navbar-nav mr-auto">
-                           <li class="nav-item ">
+                           <li class="nav-item">
                               <a class="nav-link" href="index.html">Inicio</a>
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link" href="#">Nosotros</a>
+                              <a class="nav-link" href="about.html">Nosotros</a>
                            </li>
                            <div class="dropdown">
                               <li class="nav-item active">
@@ -110,9 +110,11 @@
       <div class="row">
          <div class="col-md-5">
             <div class="owl-carousel owl-theme">
-               <div class="item"><img class="img-rack" src="images/racks/racks (4).png" alt="Imagen 1"></div>
-               <div class="item"><img class="img-rack" src="images/racks/racks (4).png" alt="Imagen 2"></div>
-               <div class="item"><img class="img-rack" src="images/racks/racks (4).png" alt="Imagen 3"></div>
+               <div class="item d-flex align-items-center justify-content-center"><img class="img-rack" src="images/racks/racks (13).png" alt="Imagen 1"></div>
+               <div class="item d-flex align-items-center justify-content-center"><img class="img-rack" src="images/racks/racks (5).png" alt="Imagen 2"></div>
+               <div class="item d-flex align-items-center justify-content-center"><img class="img-rack" src="images/racks/racks (7).png" alt="Imagen 3"></div>
+               <div class="item d-flex align-items-center justify-content-center"><img class="img-rack" src="images/racks/racks (10).png" alt="Imagen 3"></div>
+               <div class="item d-flex align-items-center justify-content-center"><img class="img-rack" src="images/racks/racks (9).png" alt="Imagen 3"></div>
                <!-- Agrega más imágenes según sea necesario -->
             </div>
          </div>
@@ -132,7 +134,7 @@
                      <div class="col-md-6">
                         <div class="additional-info">
                            <!-- Listado adicional -->
-                           <h3 class="info-header">Detalles Adicionales</h3>
+                           <h3 class="info-header">Detalles del producto</h3>
                            <ul class="info-list">
                               <li style="color: gray;"><strong>Dimensiones:</strong> 233cm x 100cm x 200cm</li>
                               <li style="color:#16d316;"><strong>Colores:</strong></li>
@@ -170,7 +172,7 @@
    </div>
 
 
-   <div class="container" style="padding:2em">
+   <div class="container" style="padding:1em">
       <div class="row">
          <div class="col-md-10 offset-md-1">
             <div id="design" class="carousel slide" data-ride="carousel">
@@ -178,17 +180,20 @@
                   <div class="carousel-item active">
                      <!-- Tu contenido para la primera diapositiva aquí -->
                      <div class="container d-flex justify-content-center">
-                        <h1 class=""><strong><span style="color: #b79c77;">Material: Tyvek</span></strong></h1>
+                        <h1 class=""><strong><span style="color: #b79c77;">Material: Dubetina</span></strong></h1>
                      </div>
-
-                     <img src="images/materials/epe.png" class="d-block w-100" alt="Slide 1">
+                     <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-material img-fluid" src="images/materials/dubetina (2).png" class="d-block w-100" alt="Slide 1">
+                     </div>
                   </div>
                   <div class="carousel-item">
                      <!-- Tu contenido para la segunda diapositiva aquí -->
                      <div class="container d-flex justify-content-center">
                         <h1 class=""><strong><span style="color: #b79c77;">Material: Evolon</span></strong></h1>
                      </div>
-                     <img src="images/materials/epe (4).png" class="d-block w-100" alt="Slide 2">
+                     <div class="d-flex align-items-center justify-content-center">
+                        <img class="img-material img-fluid" src="images/materials/evolon (4).png" class="d-block w-100" alt="Slide 2">
+                     </div>
                   </div>
                   <!-- Agrega más items según sea necesario -->
 
@@ -214,7 +219,7 @@
 
    <!--  footer -->
    <footer>
-      <div class="footer">
+      <div class="footer p-5">
          <div class="container">
             <div class="row">
                <div class=" col-md-3 col-sm-6">
@@ -351,7 +356,7 @@
       }
 
       .img-rack {
-         max-width: 70%;
+         max-width: 100%;
       }
 
       .carousel-control-prev,
@@ -390,6 +395,14 @@
          /* Ajusta el espacio entre los círculos según sea necesario */
          border: 3px solid #1d1d1d82;
          /* Borde ligero */
+      }
+      .img-material{
+         max-width: 30%;
+      }
+      .material-center{
+         display: flex;
+         align-items: center;
+         justify-content: center;
       }
    </style>
 </body>
