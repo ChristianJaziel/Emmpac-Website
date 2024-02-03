@@ -68,7 +68,7 @@
                               <a class="nav-link" href="index.html">Inicio</a>
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link" href="#">Nosotros</a>
+                              <a class="nav-link" href="about.html">Nosotros</a>
                            </li>
                            <div class="dropdown">
                               <li class="nav-item">
@@ -76,7 +76,7 @@
                                     aria-haspopup="true" aria-expanded="false">Productos</a>
                               </li>
                               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                 <a class="dropdown-item active" href="containers.html">Contenedores</a>
+                                 <a class="dropdown-item " href="containers.html">Contenedores</a>
                                  <a class="dropdown-item " href="containers-plastic.html">Corrugado Plástico</a>
                                  <a class="dropdown-item " href="containers-cardboard.html">Contenedor Cartón</a>
                                  <a class="dropdown-item" href="racks.html">Racks</a>
@@ -91,6 +91,13 @@
                               <a class="nav-link" href="contact.html">Contacto</a>
                            </li>
                         </ul>
+                        <ul class="whatsapp-list">
+                           <li class="whatsapp-list-item">
+                              <a class="whatsapp-link" href="https://wa.me/4774980640" target="_blank"><img class="whatsapp-icon" src="images/whatsapp-icon.png" alt="WhatsApp">
+                             </a>
+                           </li>
+                           <!-- Agrega más ítems según sea necesario -->
+                         </ul>
                      </div>
                   </nav>
                </div>
@@ -444,6 +451,41 @@
          align-items: center;
          justify-content: center;
       }
+      .whatsapp-list {
+         list-style: none;
+         padding: 0;
+         align-items: center;
+       }
+   
+       .whatsapp-list-item {
+         display: flex;
+         align-items: center;
+         margin-bottom: 10px;
+       }
+   
+       .whatsapp-icon {
+         margin-right: 10px;
+       }
+   
+       .whatsapp-link {
+         text-decoration: none;
+         color: #000;
+         font-weight: bold;
+       }
+   
+       /* Estilo para pantallas más pequeñas */
+       @media (max-width: 768px) {
+         .whatsapp-icon {
+           width: 10%;
+         }
+       }
+   
+       /* Estilo para pantallas más grandes */
+       @media (min-width: 769px) {
+         .whatsapp-icon {
+           width: 30%;
+         }
+       }
    </style>
 </body>
 
