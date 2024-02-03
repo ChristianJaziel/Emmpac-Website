@@ -220,7 +220,41 @@ button {
 
 
 /**-- heading section --**/
+.whatsapp-list {
+     list-style: none;
+     padding: 0;
+     align-items: center;
+   }
 
+   .whatsapp-list-item {
+     display: flex;
+     align-items: center;
+     margin-bottom: 10px;
+   }
+
+   .whatsapp-icon {
+     margin-right: 10px;
+   }
+
+   .whatsapp-link {
+     text-decoration: none;
+     color: #000;
+     font-weight: bold;
+   }
+
+   /* Estilo para pantallas más pequeñas */
+   @media (max-width: 768px) {
+     .whatsapp-icon {
+       width: 10%;
+     }
+   }
+
+   /* Estilo para pantallas más grandes */
+   @media (min-width: 769px) {
+     .whatsapp-icon {
+       width: 15%;
+     }
+   }
 
 /*---------------------------- preloader area ----------------------------*/
 
