@@ -46,15 +46,18 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="titlepage">
-                              <a href="index.html"><!--<img src="images/logo.png" alt="#" /> --> <h1 style="font-size: 40px;font-weight: bold;">emm<span class="green">pac</span></h1></a>
+                              <a href="index.html"><!--<img src="images/logo.png" alt="#" /> -->
+                                 <h1 style="font-size: 40px;font-weight: bold;">emm<span class="green">pac</span></h1>
+                              </a>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div class="col-md-10 offset-md-1">
                      <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                           aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
@@ -66,22 +69,32 @@
                               </li>
                               <div class="dropdown">
                                  <li class="nav-item">
-                                    <a class="nav-link" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+                                    <a class="nav-link" href="#" id="dropdownMenuButton" data-toggle="dropdown"
+                                       aria-haspopup="true" aria-expanded="false">Productos</a>
                                  </li>
                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item dropdown-nav" href="containers.html">Contenedores</a>
-                                    <a class="dropdown-item dropdown-nav" href="racks.html">Racks</a>
-                                    <a class="dropdown-item dropdown-nav" href="materials.html">Materiales</a>
-                                  </div>
+                                    <a class="dropdown-item active" href="containers.html">Contenedores</a>
+                                    <a class="dropdown-item " href="containers-plastic.html">Corrugado Plástico</a>
+                                    <a class="dropdown-item " href="containers-cardboard.html">Contenedor Cartón</a>
+                                    <a class="dropdown-item" href="racks.html">Racks</a>
+                                    <a class="dropdown-item" href="materials.html">Materiales</a>
+                                 </div>
                               </div>
-                              
+   
                               <li class="nav-item">
-                                 <a class="nav-link active" href="gallery.html">Galería</a>
+                                 <a class="nav-link" href="gallery.html">Galería</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="contact.html">Contacto</a>
                               </li>
                            </ul>
+                           <ul class="whatsapp-list">
+                              <li class="whatsapp-list-item">
+                                 <a class="whatsapp-link" href="https://wa.me/4774980640" target="_blank"><img class="whatsapp-icon" src="images/whatsapp-icon.png" alt="WhatsApp">
+                                </a>
+                              </li>
+                              <!-- Agrega más ítems según sea necesario -->
+                            </ul>
                         </div>
                      </nav>
                   </div>
@@ -291,5 +304,42 @@
              }
          );
        </script>
+       <style>
+         .whatsapp-list {
+            list-style: none;
+            padding: 0;
+            align-items: center;
+          }
+      
+          .whatsapp-list-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+          }
+      
+          .whatsapp-icon {
+            margin-right: 10px;
+          }
+      
+          .whatsapp-link {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+          }
+      
+          /* Estilo para pantallas más pequeñas */
+          @media (max-width: 768px) {
+            .whatsapp-icon {
+              width: 10%;
+            }
+          }
+      
+          /* Estilo para pantallas más grandes */
+          @media (min-width: 769px) {
+            .whatsapp-icon {
+              width: 30%;
+            }
+          }
+       </style>
    </body>
 </html>

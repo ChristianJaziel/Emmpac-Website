@@ -34,6 +34,7 @@
 <!-- body -->
 
 <body class="main-layout in_page">
+  
    <!-- loader  -->
    <div class="loader_bg">
       <div class="loader"><img src="images/loading.gif" alt="#" /></div>
@@ -382,6 +383,23 @@
          align-items: center;
          justify-content: center;
       }
+      #whatsapp-button {
+         position: fixed;
+         left: 20px;
+         bottom: 50%;
+         transform: translateY(50%);
+         background-color: #25D366; /* Color de fondo de WhatsApp */
+         color: #fff;
+         padding: 15px;
+         border: none;
+         border-radius: 50%;
+         cursor: pointer;
+         transition: transform 0.3s ease; /* Transición suave al hacer hover */
+       }
+   
+       #whatsapp-button:hover {
+         transform: translateY(50%) translateX(10px); /* Desplazamiento hacia la derecha en hover */
+       }
    </style>
 </body>
 
